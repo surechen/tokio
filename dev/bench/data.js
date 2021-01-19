@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611020530328,
+  "lastUpdate": 1611020536211,
   "repoUrl": "https://github.com/surechen/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1585,6 +1585,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19263524,
             "range": "± 2608454",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "heng@cantab.net",
+            "name": "Henry Gomersall",
+            "username": "hgomersall"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5402c948eebbb4c6c695e156d68ce495a43ea81a",
+          "message": "io: clarify AsyncFd docs about changes of the inner fd (#3430)",
+          "timestamp": "2021-01-17T21:39:58+01:00",
+          "tree_id": "63ed16dcd34c11314b7bda2dcb983946b5669a1e",
+          "url": "https://github.com/surechen/tokio/commit/5402c948eebbb4c6c695e156d68ce495a43ea81a"
+        },
+        "date": 1611020528604,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 188737,
+            "range": "± 43328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 678408,
+            "range": "± 141863",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4940045,
+            "range": "± 1048800",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18496474,
+            "range": "± 3330752",
             "unit": "ns/iter"
           }
         ]
