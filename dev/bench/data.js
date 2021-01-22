@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611020544576,
+  "lastUpdate": 1611300431653,
   "repoUrl": "https://github.com/surechen/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1633,6 +1633,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18496474,
             "range": "± 3330752",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6f08120d0e8764f5ff4d474ded342c85d9b188d",
+          "message": "task: add LocalSet example (#3438)",
+          "timestamp": "2021-01-21T16:36:26+01:00",
+          "tree_id": "dfc6d5e2eb2113d89db0940b1517833cb30a745f",
+          "url": "https://github.com/surechen/tokio/commit/c6f08120d0e8764f5ff4d474ded342c85d9b188d"
+        },
+        "date": 1611300430829,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 168773,
+            "range": "± 32488",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 666601,
+            "range": "± 131375",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4791720,
+            "range": "± 950726",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18462259,
+            "range": "± 2752080",
             "unit": "ns/iter"
           }
         ]
