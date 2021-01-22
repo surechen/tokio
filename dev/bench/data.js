@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611300444570,
+  "lastUpdate": 1611300448627,
   "repoUrl": "https://github.com/surechen/tokio",
   "entries": {
     "sync_rwlock": [
@@ -863,6 +863,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 496,
             "range": "± 14",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6f08120d0e8764f5ff4d474ded342c85d9b188d",
+          "message": "task: add LocalSet example (#3438)",
+          "timestamp": "2021-01-21T16:36:26+01:00",
+          "tree_id": "dfc6d5e2eb2113d89db0940b1517833cb30a745f",
+          "url": "https://github.com/surechen/tokio/commit/c6f08120d0e8764f5ff4d474ded342c85d9b188d"
+        },
+        "date": 1611300446603,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 951,
+            "range": "± 111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14946,
+            "range": "± 4821",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 991,
+            "range": "± 83",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15238,
+            "range": "± 3372",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 549,
+            "range": "± 52",
             "unit": "ns/iter"
           }
         ]
