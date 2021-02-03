@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612340010313,
+  "lastUpdate": 1612340014124,
   "repoUrl": "https://github.com/surechen/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2757,6 +2757,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1090,
             "range": "± 78",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "artem@vorotnikov.me",
+            "name": "Artem Vorotnikov",
+            "username": "vorot93"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc97fb8a5ff6ef17f6dc9968fbbe67002cff4130",
+          "message": "Suppress deprecated warnings for spin_loop_hint (#3497)\n\n* Suppress deprecated warnings for spin_loop_hint\n\n* Update tokio/src/loom/std/mod.rs\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>\n\n* Update tokio/src/sync/task/atomic_waker.rs\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>\n\n* fmt\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>",
+          "timestamp": "2021-02-01T15:55:21+03:00",
+          "tree_id": "effd8bf970f9044cf0ebe0b3cd8446b297b3efc8",
+          "url": "https://github.com/surechen/tokio/commit/cc97fb8a5ff6ef17f6dc9968fbbe67002cff4130"
+        },
+        "date": 1612340013197,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15412,
+            "range": "± 5148",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1044,
+            "range": "± 225",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 622,
+            "range": "± 252",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15269,
+            "range": "± 5677",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1048,
+            "range": "± 315",
             "unit": "ns/iter"
           }
         ]
