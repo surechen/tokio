@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611300448627,
+  "lastUpdate": 1612339990663,
   "repoUrl": "https://github.com/surechen/tokio",
   "entries": {
     "sync_rwlock": [
@@ -4085,6 +4085,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 687361,
             "range": "± 6932",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "artem@vorotnikov.me",
+            "name": "Artem Vorotnikov",
+            "username": "vorot93"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc97fb8a5ff6ef17f6dc9968fbbe67002cff4130",
+          "message": "Suppress deprecated warnings for spin_loop_hint (#3497)\n\n* Suppress deprecated warnings for spin_loop_hint\n\n* Update tokio/src/loom/std/mod.rs\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>\n\n* Update tokio/src/sync/task/atomic_waker.rs\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>\n\n* fmt\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>",
+          "timestamp": "2021-02-01T15:55:21+03:00",
+          "tree_id": "effd8bf970f9044cf0ebe0b3cd8446b297b3efc8",
+          "url": "https://github.com/surechen/tokio/commit/cc97fb8a5ff6ef17f6dc9968fbbe67002cff4130"
+        },
+        "date": 1612339989890,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6300882,
+            "range": "± 2624140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6043566,
+            "range": "± 1680941",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5792458,
+            "range": "± 2465815",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 614,
+            "range": "± 15",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 616,
+            "range": "± 21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 613,
+            "range": "± 16",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 73234,
+            "range": "± 2643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1305,
+            "range": "± 30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 986305,
+            "range": "± 5366",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 708624,
+            "range": "± 12649",
             "unit": "ns/iter"
           }
         ]
