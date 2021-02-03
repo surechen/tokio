@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612339990663,
+  "lastUpdate": 1612339999099,
   "repoUrl": "https://github.com/surechen/tokio",
   "entries": {
     "sync_rwlock": [
@@ -917,6 +917,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 549,
             "range": "± 52",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "artem@vorotnikov.me",
+            "name": "Artem Vorotnikov",
+            "username": "vorot93"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc97fb8a5ff6ef17f6dc9968fbbe67002cff4130",
+          "message": "Suppress deprecated warnings for spin_loop_hint (#3497)\n\n* Suppress deprecated warnings for spin_loop_hint\n\n* Update tokio/src/loom/std/mod.rs\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>\n\n* Update tokio/src/sync/task/atomic_waker.rs\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>\n\n* fmt\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>",
+          "timestamp": "2021-02-01T15:55:21+03:00",
+          "tree_id": "effd8bf970f9044cf0ebe0b3cd8446b297b3efc8",
+          "url": "https://github.com/surechen/tokio/commit/cc97fb8a5ff6ef17f6dc9968fbbe67002cff4130"
+        },
+        "date": 1612339998337,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 887,
+            "range": "± 146",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13741,
+            "range": "± 5383",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 950,
+            "range": "± 133",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13901,
+            "range": "± 4246",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 551,
+            "range": "± 91",
             "unit": "ns/iter"
           }
         ]
